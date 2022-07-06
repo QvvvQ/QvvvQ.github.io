@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#4287f5, #2214e0);
+    padding: 50px;
+}
+
+.container
+{
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+
+header
+{
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    right: -20px;
+    padding: 20px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05); 
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header h1
+{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header a
+{
+    color: #fff;
+}
+
+header a:hover
+{
+    color:blue;
+}
+
+.content
+{
+    flex: 0 0 50%;
+    max-width: 45%;
+    min-width: 45%;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05); 
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 20px;
+}
+
+.content:nth-child(1) { order: 1; }
+.content:nth-child(2) { order: 2; }
+.content:nth-child(3) { order: 3; }
+.content:nth-child(4) { order: 4; }
+
+.content h2
+{
+    font-size: 3em;
+    color: #fff;
+}
+
+.content p
+{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.content p a
+{
+    color: #fff;
+}
+
+.content p a:hover
+{
+    color: blue;
+}
+
+.sci
+{
+    position: absolute;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    top: 100px;
+    flex-direction: column;
+}
+.sci li
+{
+    list-style: none;
+}
+
+.sci li a
+{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    border-radius: 50%;
+    margin: 5px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sci li a img
+{
+    transform: scale(0.6);
+    transition: 0.5s;
+}
+
+.sci li:hover a img
+{
+    transform: scale(0.6) rotate(360deg);
+}
+
+.container .card
+{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container .card .cardcontent
+{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    
+    transition: 0.5s;
+}
+
+.container .card:hover .cardcontent
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .cardcontent h3
+{
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+}
+
+.container .card .cardcontent p
+{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0;
+    display: none;
+    transition: 1.5s;
+}
+.container .card:hover .cardcontent p
+{
+    opacity: 1;
+    display: inline-flex;
+}
+
+.table{
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.table a {
+    color: #fff;
+}
+
+.tablerow{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.numberbutton
+{
+    background: #fff;
+    color: #666;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
