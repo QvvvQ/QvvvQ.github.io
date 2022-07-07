@@ -710,7 +710,7 @@
 
             function stars()
             {
-                const count = window.innerWidth /2.5
+                const count = window.innerWidth / 10;
                 const section = document.querySelector('.background');
                 var i = 0;
                 while (i < count)
@@ -724,6 +724,7 @@
                     star.style.top = y + 'px';
                     star.style.width = 1+size+'px';
                     star.style.height = 1+size+'px';
+                    
 
                     const duration = Math.random() * 2;
 
